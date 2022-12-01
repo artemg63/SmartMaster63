@@ -122,13 +122,6 @@
 
   /* Main */
   /* Intro */
-  .intro-wrapper {
-    display: block;
-    width: 100%;
-    padding: 102px 0 110px;
-    background-color: #F6F2F2;
-  }
-
   .intro {
     display: flex;
     width: 1249px;
@@ -162,12 +155,12 @@
   }
 
   .action-link {
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 227px;
     padding: 0.5em 1em;
-    box-sizing: border-box;
     min-height: 55px;
     font-family: 'Open Sans';
     font-size: 18px;
@@ -180,7 +173,12 @@
   .action-link_red-full {
     color: #fff;
     background-color: #FF2D2D;
+  }
 
+  .action-link_red-transp {
+    color: #FF2D2D;
+    background-color: rgba(0,0,0,0.0001);
+    border: 2px solid #FF2D2D;
   }
 
   .intro__video {
@@ -188,4 +186,106 @@
     height: 356px;
     object-fit: cover;
     box-shadow: -2.2px -13.8px 73px rgba(0,0,0,0.29) ;
+  }
+
+  /* Services */
+  .services {
+    display: flex;
+    width: 1249px;
+    margin: 0 auto;
+    padding: 107px 0 90px;
+    border-bottom: 2px solid #ECECEC;
+    justify-content: space-between;
+  }
+
+  .services__info {
+    width: 539px;
+  }
+
+  .services__heading {
+    margin: 0;
+    margin-bottom: 50px;
+    font-family: 'Open Sans';
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 55px;
+    letter-spacing: 0.422159px;
+    text-transform: uppercase;
+  }
+
+  .services__about {
+    margin: 0;
+    margin-bottom: 64px;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  .services__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 13px;
+    width: 610px;
+  }
+
+  .services__item {
+    width: 285px;
+    margin-bottom: 53px;
+  }
+
+  .services__item_icon_apple::before {
+    content: '';
+    display: block;
+    width: 41px;
+    height: 41px;
+    background-image: url('../img/apple.svg');
+    background-repeat: no-repeat;
+    margin-bottom: 33px;
+  }
+
+  .services__item_icon_andr::before {
+    content: '';
+    display: block;
+    width: 41px;
+    height: 41px;
+    background-image: url('../img/android.svg');
+    background-repeat: no-repeat;
+    margin-bottom: 33px;
+  }
+
+  .services__item_icon_old::before {
+    content: '';
+    display: block;
+    width: 41px;
+    height: 41px;
+    background-image: url('../img/old.svg');
+    background-repeat: no-repeat;
+    margin-bottom: 33px;
+  }
+
+  .services__item_icon_tablet::before {
+    content: '';
+    display: block;
+    width: 41px;
+    height: 41px;
+    background-image: url('../img/tablet.svg');
+    background-repeat: no-repeat;
+    margin-bottom: 33px;
+  }
+  
+  .services__title {
+    margin: 0;
+    margin-bottom: 13px;
+    font-family: 'Open Sans';
+    font-size: 24.0692px;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  .services__text {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 28px;
   }
